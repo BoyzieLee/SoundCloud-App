@@ -2,13 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My Cool Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Day Music</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <nav>
+      <h1>All Day Music</h1>
+      <!-- <p class="navAbout">About</p> -->
+      <!-- <div class="navButtons">
+      <button type="button" name="signIn">Sign In</button>
+      <button type="button" name="create">Create Account</button>
+    </div> -->
+  </nav>
     <div class="container">
-      <p>Welcome to your life.</p>
+      <section>
+        <div class="nowPlayingPic">
+          <img src="http://placehold.it/300x300" alt="" />
+        </div>
+
+        <div class="audioBar">
+          <p>Audio Bar Here</p>
+        </div>
+          <div class="playBack">
+            <p class="nowPlaying">Now Playing:</p>
+            <div class="nowPlayingText">
+              <p class="artistNowPlaying">Artist Name -</p>
+              <p class="songNowPlaying"> Song Title</p>
+            </div>
+          </div>
+      </section>
+      <hr>
+      <section>
+        <div class="searchBar">
+          <input type="search" placeholder='Artist or Song Title' name="name" value="">
+          <button type="button" name="button">Search</button>
+        </div>
+      </section>
+      <hr>
+      <main>
+        <div class="item">
+          <img src="http://placehold.it/150x150" alt="" />
+          <h6>Song Title</h6>
+          <h4>Artist Name</h4>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/150x150" alt="" />
+          <h6>Song Title</h6>
+          <h4>Artist Name</h4>
+        </div><div class="item">
+          <img src="http://placehold.it/150x150" alt="" />
+          <h6>Song Title</h6>
+          <h4>Artist Name</h4>
+        </div><div class="item">
+          <img src="http://placehold.it/150x150" alt="" />
+          <h6>Song Title</h6>
+          <h4>Artist Name</h4>
+        </div>
+      </main>
+      <footer>
+        <p>This app was created by Boyzie Mathis & powerd by <strong>SoundCloud</strong></p>
+      </footer>
     </div>
     <script src="js/bundle.js"></script>
   </body>

@@ -1,0 +1,59 @@
+$bgColor: #282C34;
+$txtColor: white;
+$divider: #FF5420;
+
+body {
+  width: 100%;
+  padding: 0;
+  background-color: $bgColor;
+  color: $txtColor;
+  text-align: center;
+}
+nav {
+  background-color: black;
+  h1 {
+    margin: 0;
+    padding: 3% 0;
+  }
+  // p { I need to hide this  }
+}
+.container {
+  margin:2.5% 2.5% 5px 2.5%;
+}
+
+img {
+  border-radius: .25em;
+}
+.nowPlaying {
+  color: grey;
+
+  p {
+    // color: $txtColor;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+hr {
+  border: 1px $divider;
+  border-style: solid;
+}
+.searchBar {
+  input: {
+    margin: 0; 
+    border-radius: .25em 0 0 .25em;
+    border-style: none;
+  }
+  button {
+    border-radius: 0 .25em .25em 0;
+    border-style: none;
+    background-color: $divider;
+    color: $txtColor;
+
+  }
+}
+
+footer {
+  font-size: .5em;
+}
