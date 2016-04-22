@@ -14,7 +14,8 @@ nav {
     display: none; }
 
 img {
-  border-radius: .25em; }
+  border-radius: .25em;
+  max-width: 100%; }
 
 .nowPlaying {
   color: #A9B5BB;
@@ -31,6 +32,9 @@ img {
   margin: 0 0 2.5% 0;
   padding: 0;
   font-size: 1em; }
+
+.playBack2 {
+  display: none; }
 
 hr {
   border: 1px #FF5420;
@@ -86,6 +90,64 @@ strong {
 
 @media screen and (min-width: 500px) {
   body {
-    background-color: #A9B5BB; } }
+    background-color: #21252B; }
+  nav {
+    background-color: black; }
+    nav h1 {
+      text-align: left;
+      float: left;
+      margin: 0 2.5%;
+      padding: 3% 0; }
+    nav p {
+      text-align: right;
+      float: right;
+      display: inline-block;
+      padding: 3% 2.5% 3% 0; }
+  .container {
+    clear: both; }
+  .nowPlayingPic img {
+    border-radius: .25em;
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin: 0 2.5% 2.5% 2.5%; }
+  .playBack1 {
+    display: none; }
+  .playBack2 {
+    display: inline-block; }
+  .audioBar img {
+    margin-top: 14%; }
+  .nowPlaying {
+    color: #A9B5BB;
+    margin: 2.5% 0;
+    float: left; }
+  .nowPlayingText {
+    margin: 2.5% 0;
+    float: right; }
+  .artistNowPlaying {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 1em; }
+  .songNowPlaying {
+    display: inline-block;
+    margin: 0 0 2.5% 0;
+    padding: 0;
+    font-size: 1em; }
+  .firsHr {
+    clear: both; }
+  .searchBar input {
+    width: 450px;
+    height: 35px;
+    margin: 0;
+    border-radius: .25em 0 0 .25em;
+    border-style: none; }
+  .searchBar button {
+    width: 100px;
+    height: 35px;
+    border-radius: 0 .25em .25em 0;
+    border-style: none;
+    background-color: #FF5420;
+    color: white; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -16,7 +16,6 @@ nav {
     margin: 0;
     padding: 3% 0;
   }
-  // p { I need to hide this  }
   p {
     display: none;
   }
@@ -27,6 +26,7 @@ nav {
 
 img {
   border-radius: .25em;
+  max-width: 100%;
 }
 .nowPlaying {
   color: $lightGrey;
@@ -45,6 +45,9 @@ img {
   padding: 0;
   font-size: 1em;
 }
+.playBack2 {
+  display: none;
+}
 
 hr {
   border: 1px $divider;
@@ -60,12 +63,10 @@ hr {
   }
   button {
     height: 25px;
-
     border-radius: 0 .25em .25em 0;
     border-style: none;
     background-color: $divider;
     color: $txtColor;
-
   }
 }
 
@@ -119,6 +120,90 @@ strong {
 ////////// FULL SIZE VIEW//////////////
 @media screen and (min-width: 500px) {
   body {
-    background-color: $lightGrey;
+    background-color: #21252B;
   }
+  nav {
+    background-color: black;
+    h1 {
+      text-align: left;
+      float: left;
+      // display: inline-block;
+      margin: 0 2.5%;
+      padding: 3% 0;
+    }
+    p {
+      text-align: right;
+      float: right;
+      display: inline-block;
+      padding: 3% 2.5% 3% 0;
+      // margin:  0 2.5%;
+
+    }
+  }
+  .container {
+    clear: both;
+    // margin:2.5% 2.5% 5px 2.5%;
+  }
+  .nowPlayingPic img {
+    border-radius: .25em;
+    // max-width: 100%;
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin: 0 2.5% 2.5% 2.5%;
+  }
+  div .searchBar {
+  }
+  .playBack1 {
+    display: none;
+  }
+  .playBack2 {
+    display: inline-block;
+  }
+  .audioBar img {
+    margin-top: 14%;
+  }
+  .nowPlaying {
+    color: $lightGrey;
+    margin: 2.5% 0;
+    float: left;
+  }
+  .nowPlayingText {
+    margin: 2.5% 0;
+    float: right;
+  }
+  .artistNowPlaying {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  .songNowPlaying {
+    display: inline-block;
+    margin: 0 0 2.5% 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  .firsHr {
+    clear: both;
+  }
+  .searchBar {
+    input {
+      width: 450px;
+      height: 35px;
+      margin: 0;
+      border-radius: .25em 0 0 .25em;
+      border-style: none;
+    }
+    button {
+      width: 100px;
+      height: 35px;
+      border-radius: 0 .25em .25em 0;
+      border-style: none;
+      background-color: $divider;
+      color: $txtColor;
+    }
+  }
+
+
 }
