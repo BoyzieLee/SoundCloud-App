@@ -333,12 +333,9 @@ strong {
       color: $txtColor;
     }
     main {
-      // margin: 0 5%;
-      // margin-bottom: 5%;
-      // height: 200px;
+
       .searchResults {
-        // text-align: left;
-        // margin-left: 10%;
+        margin-left: 2.5%;
 
       }
       .item img {
@@ -346,18 +343,11 @@ strong {
         height: 300px;
       }
       .item {
-        // text-align: left;
-        // float: left;
-        // display: inline-block;
-        margin: 0 0 2.5% 10%;
-        padding: 0;
-        overflow: auto;
+        margin-left: 2.5%;
+
       }
       .searchItems {
-        // width: 280px;
-        // max-width: 100%;
-        // margin-top: 15%;
-        // float: right;
+
       }
       hr  {
         border: 1px $lightGrey;
