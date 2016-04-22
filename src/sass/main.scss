@@ -1,6 +1,7 @@
 $bgColor: #282C34;
 $txtColor: white;
 $divider: #FF5420;
+$lightGrey: #A9B5BB;
 
 body {
   width: 100%;
@@ -16,23 +17,33 @@ nav {
     padding: 3% 0;
   }
   // p { I need to hide this  }
+  p {
+    display: none;
+  }
 }
 .container {
-  margin:2.5% 2.5% 5px 2.5%;
+  // margin:2.5% 2.5% 5px 2.5%;
 }
 
 img {
   border-radius: .25em;
 }
 .nowPlaying {
-  color: grey;
+  color: $lightGrey;
+  margin: 2.5% 0;
 
-  p {
-    // color: $txtColor;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-  }
+}
+.artistNowPlaying {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+.songNowPlaying {
+  display: inline-block;
+  margin: 0 0 2.5% 0;
+  padding: 0;
+  font-size: 1em;
 }
 
 hr {
@@ -40,12 +51,16 @@ hr {
   border-style: solid;
 }
 .searchBar {
-  input: {
-    margin: 0; 
+  input {
+    width: 300px;
+    height: 25px;
+    margin: 0;
     border-radius: .25em 0 0 .25em;
     border-style: none;
   }
   button {
+    height: 25px;
+
     border-radius: 0 .25em .25em 0;
     border-style: none;
     background-color: $divider;
@@ -54,6 +69,56 @@ hr {
   }
 }
 
+// Square layout////////
+// .item {
+//   display: inline-block;
+//   margin: 0;
+//   padding: 0;
+// }
+
+main {
+  margin: 0 2.5%;
+  margin-bottom: 5%;
+  .searchResults {
+    text-align: left;
+  }
+  .item {
+    text-align: left;
+    float: left;
+    // display: inline-block;
+    margin: 0 0 2.5% 0;
+    padding: 0;
+  }
+  .searchItems {
+    width: 280px;
+    margin-top: 12%;
+    float: right;
+  }
+  hr  {
+    border: 1px $lightGrey;
+    border-style: solid;
+  }
+}
+h5 {
+  color: $lightGrey;
+  margin: 0 0 0 5%;
+}
+h4 {
+  margin: 5% 0 0 5%;
+}
+
 footer {
+  clear: both;
+  padding: 2.5% 0;
   font-size: .5em;
+  background-color: black;
+}
+strong {
+  color: $divider;
+}
+////////// FULL SIZE VIEW//////////////
+@media screen and (min-width: 500px) {
+  body {
+    background-color: $lightGrey;
+  }
 }
