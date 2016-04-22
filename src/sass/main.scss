@@ -31,7 +31,6 @@ img {
 .nowPlaying {
   color: $lightGrey;
   margin: 2.5% 0;
-
 }
 .artistNowPlaying {
   display: inline-block;
@@ -60,6 +59,7 @@ hr {
     margin: 0;
     border-radius: .25em 0 0 .25em;
     border-style: none;
+    padding: 2.5%;
   }
   button {
     height: 25px;
@@ -117,8 +117,137 @@ footer {
 strong {
   color: $divider;
 }
-////////// FULL SIZE VIEW//////////////
+
+
+
+
+///////////////////////// MOBLIE SIZE VIEW/////////////////////////
 @media screen and (min-width: 500px) {
+  body {
+    background-color: #21252B;
+  }
+  nav {
+    background-color: black;
+    h1 {
+      text-align: left;
+      float: left;
+      // display: inline-block;
+      margin: 0 2.5%;
+      padding: 3% 0;
+    }
+    p {
+      text-align: right;
+      float: right;
+      display: inline-block;
+      padding: 3% 2.5% 3% 0;
+      // margin:  0 2.5%;
+    }
+  }
+  .container {
+    clear: both;
+    // margin:2.5% 2.5% 5px 2.5%;
+  }
+
+  img .nowPlayingPic {
+    border-radius: .25em;
+    // max-width: 100%;
+    width: 400px;
+    height: 400px;
+  }
+
+  .nowPlaying {
+    color: $lightGrey;
+    margin: 2.5% 0;
+  }
+  .artistNowPlaying {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  .songNowPlaying {
+    display: inline-block;
+    margin: 0 0 2.5% 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  .playBack2 {
+    display: none;
+  }
+
+  .audioBar img {
+    width: 485px;
+    height: 60px;
+    text-align: center;
+  }
+
+  .searchBar {
+    input {
+      width: 380px;
+      height: 35px;
+      margin: 0;
+      border-radius: .25em 0 0 .25em;
+      border-style: none;
+    }
+    button {
+      width: 100px;
+      height: 35px;
+      border-radius: 0 .25em .25em 0;
+      border-style: none;
+      background-color: $divider;
+      color: $txtColor;
+    }
+  }
+
+  hr {
+    width: 95%;
+  }
+
+  main {
+    margin: 0 5%;
+    margin-bottom: 5%;
+    // height: 200px;
+    .searchResults {
+      text-align: left;
+      margin-left: 10%;
+
+    }
+    .item img {
+      width: 120px;
+      height: 120px;
+    }
+    .item {
+      text-align: left;
+      float: left;
+      // display: inline-block;
+      margin: 0 0 2.5% 10%;
+      padding: 0;
+      overflow: auto;
+    }
+    .searchItems {
+      width: 280px;
+      // max-width: 100%;
+      margin-top: 15%;
+      // float: right;
+    }
+    hr  {
+      border: 1px $lightGrey;
+      border-style: solid;
+    }
+  }
+  h5 {
+    color: $lightGrey;
+    margin: 0 0 0 5%;
+  }
+  h4 {
+    margin: 5% 0 0 5%;
+  }
+
+}
+
+
+///////////////////// FULL SIZE VIEW/////////////////////////////////
+@media screen and (min-width: 830px) {
   body {
     background-color: #21252B;
   }
@@ -189,7 +318,7 @@ strong {
   }
   .searchBar {
     input {
-      width: 450px;
+      width: 400px;
       height: 35px;
       margin: 0;
       border-radius: .25em 0 0 .25em;
@@ -197,11 +326,43 @@ strong {
     }
     button {
       width: 100px;
-      height: 35px;
+      height: 44px;
       border-radius: 0 .25em .25em 0;
       border-style: none;
       background-color: $divider;
       color: $txtColor;
+    }
+    main {
+      // margin: 0 5%;
+      // margin-bottom: 5%;
+      // height: 200px;
+      .searchResults {
+        // text-align: left;
+        // margin-left: 10%;
+
+      }
+      .item img {
+        width: 300px;
+        height: 300px;
+      }
+      .item {
+        // text-align: left;
+        // float: left;
+        // display: inline-block;
+        margin: 0 0 2.5% 10%;
+        padding: 0;
+        overflow: auto;
+      }
+      .searchItems {
+        // width: 280px;
+        // max-width: 100%;
+        // margin-top: 15%;
+        // float: right;
+      }
+      hr  {
+        border: 1px $lightGrey;
+        border-style: solid;
+      }
     }
   }
 

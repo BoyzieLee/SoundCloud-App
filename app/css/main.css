@@ -45,7 +45,8 @@ hr {
   height: 25px;
   margin: 0;
   border-radius: .25em 0 0 .25em;
-  border-style: none; }
+  border-style: none;
+  padding: 2.5%; }
 
 .searchBar button {
   height: 25px;
@@ -105,6 +106,88 @@ strong {
       padding: 3% 2.5% 3% 0; }
   .container {
     clear: both; }
+  img .nowPlayingPic {
+    border-radius: .25em;
+    width: 400px;
+    height: 400px; }
+  .nowPlaying {
+    color: #A9B5BB;
+    margin: 2.5% 0; }
+  .artistNowPlaying {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 1em; }
+  .songNowPlaying {
+    display: inline-block;
+    margin: 0 0 2.5% 0;
+    padding: 0;
+    font-size: 1em; }
+  .playBack2 {
+    display: none; }
+  .audioBar img {
+    width: 485px;
+    height: 60px;
+    text-align: center; }
+  .searchBar input {
+    width: 380px;
+    height: 35px;
+    margin: 0;
+    border-radius: .25em 0 0 .25em;
+    border-style: none; }
+  .searchBar button {
+    width: 100px;
+    height: 35px;
+    border-radius: 0 .25em .25em 0;
+    border-style: none;
+    background-color: #FF5420;
+    color: white; }
+  hr {
+    width: 95%; }
+  main {
+    margin: 0 5%;
+    margin-bottom: 5%; }
+    main .searchResults {
+      text-align: left;
+      margin-left: 10%; }
+    main .item img {
+      width: 120px;
+      height: 120px; }
+    main .item {
+      text-align: left;
+      float: left;
+      margin: 0 0 2.5% 10%;
+      padding: 0;
+      overflow: auto; }
+    main .searchItems {
+      width: 280px;
+      margin-top: 15%; }
+    main hr {
+      border: 1px #A9B5BB;
+      border-style: solid; }
+  h5 {
+    color: #A9B5BB;
+    margin: 0 0 0 5%; }
+  h4 {
+    margin: 5% 0 0 5%; } }
+
+@media screen and (min-width: 830px) {
+  body {
+    background-color: #21252B; }
+  nav {
+    background-color: black; }
+    nav h1 {
+      text-align: left;
+      float: left;
+      margin: 0 2.5%;
+      padding: 3% 0; }
+    nav p {
+      text-align: right;
+      float: right;
+      display: inline-block;
+      padding: 3% 2.5% 3% 0; }
+  .container {
+    clear: both; }
   .nowPlayingPic img {
     border-radius: .25em;
     width: 300px;
@@ -137,17 +220,27 @@ strong {
   .firsHr {
     clear: both; }
   .searchBar input {
-    width: 450px;
+    width: 400px;
     height: 35px;
     margin: 0;
     border-radius: .25em 0 0 .25em;
     border-style: none; }
   .searchBar button {
     width: 100px;
-    height: 35px;
+    height: 44px;
     border-radius: 0 .25em .25em 0;
     border-style: none;
     background-color: #FF5420;
-    color: white; } }
+    color: white; }
+  .searchBar main .item img {
+    width: 300px;
+    height: 300px; }
+  .searchBar main .item {
+    margin: 0 0 2.5% 10%;
+    padding: 0;
+    overflow: auto; }
+  .searchBar main hr {
+    border: 1px #A9B5BB;
+    border-style: solid; } }
 
 /*# sourceMappingURL=main.css.map */
